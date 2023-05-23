@@ -1,6 +1,9 @@
 # cs6953dlfinalproject
 
-In this project, a generative adversarial network (GAN) designed for anime-style photo transformation from the paper AnimeGAN was implemented. The GAN is made of a generator and a discriminator. The goal of the generator is to produce samples that are indistinguishable from real data. The discriminator network on the other hand tries to distinguish between real data samples from the training dataset and the synthetic samples created by the generator, and learns to classify whether a given sample is real or fake.
+In this project, a generative adversarial network (GAN) designed for anime-style photo transformation from the paper AnimeGAN was implemented. The GAN is made of a generator and a discriminator. The goal of the generator is to produce samples that are indistinguishable from real data. The discriminator network on the other hand tries to distinguish between real data samples from the training dataset and the synthetic samples created by the generator, and learns to classify whether a given sample is real or fake. 
+
+Compared to previous style transfer models, the Anime-GAN employees a more lightweight design that reduces the computational complexity and memory requirements. It also improved the anime-styled effect and texture by using special loss functions such as grayscale style loss, grayscale adversarial loss and color reconstruction loss.
+
 
 Python Notebook Outline
 
@@ -25,3 +28,5 @@ Python Notebook Outline
 - Main - Training
 - Testing
 - References
+
+Note: currently, the default epoch number is set to 100 epoch. However it takes long time to train. For demonstration purpose the 'full' version includes final effect of using pretrained weights. The training step can also be run with less epochs but the result would be less optimal.  

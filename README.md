@@ -1,6 +1,6 @@
 # cs6953dlfinalproject
 
-In this project, a generative adversarial network (GAN) de-signed for anime-style photo transformation from the paper AnimeGAN was implemented. The GAN is made of a generator and a discriminator.
+In this project, a generative adversarial network (GAN) designed for anime-style photo transformation from the paper AnimeGAN was implemented. The GAN is made of a generator and a discriminator. The goal of the generator is to produce samples that are indistinguishable from real data. The discriminator network on the other hand tries to distinguish between real data samples from the training dataset and the synthetic samples created by the generator, and learns to classify whether a given sample is real or fake.
 
 Python Notebook Outline
 
@@ -18,10 +18,10 @@ Python Notebook Outline
   - vgg19 is used to obtain base value for loss to speed up the training
 - Initialize Loss Functions
 - Helper Functions
-- Prepare Colab Path for dataset
+- Prepare Colab Path for dowloading the datasets
 - Prepare Dataset
 - Initialize the Generator and the Discriminator
 - Show Summary of the Network Structure
 - Main - Training
-- References
 - Testing
+- References
